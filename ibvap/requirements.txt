@@ -15,18 +15,18 @@ asyncpg==0.29.0
 SQLAlchemy==2.0.35
 
 # --- Computer vision / perception team ---
-opencv-python==4.10.0.84
-ultralytics==8.3.10
-easyocr==1.7.2
-mediapipe==0.10.14
-torch==2.4.1
-torchvision==0.19.1
-torchreid==0.2.5
-insightface==0.7.3
+opencv-python>=4.10.0
+ultralytics>=8.3.10
+easyocr>=1.7.2
+mediapipe>=0.10.14
+torch>=2.4.1
+torchvision>=0.19.1
+torchreid>=0.2.5
+insightface>=0.7.3
 
 # --- Re-ID / vector search (reasoning team) ---
-faiss-cpu==1.9.0.post1
-numpy==1.26.4
+faiss-cpu>=1.9.0
+numpy>=1.26.4,<2.0.0
 
 # --- Security (shared) ---
 python-jose[cryptography]==3.3.0
