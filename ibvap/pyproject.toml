@@ -1,0 +1,16 @@
+[project]
+name = "ibvap"
+version = "0.1.0"
+description = "Intelligent Border Video Analytics Platform"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["perception/tests", "reasoning/tests", "platform/tests"]
+asyncio_mode = "auto"
+
+[tool.black]
+line-length = 100
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"

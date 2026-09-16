@@ -1,0 +1,26 @@
+# Local dev environment (Step 1). Run: docker compose up -d
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: ibvap-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ibvap
+      POSTGRES_USER: ibvap_user
+      POSTGRES_PASSWORD: change_me
+    ports:
+      - "5432:5432"
+    volumes:
+      - ibvap_pg_data:/var/lib/postgresql/data
+
+  # Hyperledger Fabric dev network is intentionally NOT included here -
+  # it needs its own multi-container topology (peers, orderer, CA) that
+  # should be set up as part of Step 36, once the platform team is ready.
+  # A lightweight local stand-in (e.g. a mock ledger service) can be
+  # added here later if Team 3 wants to develop against something before
+  # the real Fabric network exists.
+
+volumes:
+  ibvap_pg_data:

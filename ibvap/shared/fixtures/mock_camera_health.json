@@ -1,0 +1,22 @@
+[
+  {
+    "camera_id": "BOP-07-CAM-03",
+    "status": "healthy",
+    "expected_fps": 15.0,
+    "actual_fps": 14.7,
+    "frame_is_blank": false,
+    "timestamp": "2026-09-16T05:12:33.204Z",
+    "edge_queue_depth_tier1": 0,
+    "edge_queue_depth_tier2": 0
+  },
+  {
+    "camera_id": "BOP-07-CAM-05",
+    "status": "degraded",
+    "expected_fps": 15.0,
+    "actual_fps": 6.2,
+    "frame_is_blank": false,
+    "timestamp": "2026-09-16T05:12:33.204Z",
+    "edge_queue_depth_tier1": 3,
+    "edge_queue_depth_tier2": 1
+  }
+]

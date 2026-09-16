@@ -1,0 +1,42 @@
+[
+  {
+    "event_id": "evt-2026-09-16-004821",
+    "camera_id": "BOP-07-CAM-03",
+    "zone_id": "zone-north-ridge",
+    "global_identity_id": "gid-88213",
+    "event_type": "zone_violation",
+    "tier1_flags": ["zone_violation"],
+    "tier2_observations": ["trajectory_jagged"],
+    "context_multiplier": 1.4,
+    "risk_score": 34.2,
+    "severity": "medium",
+    "event_timestamp": "2026-09-16T05:12:33.204Z",
+    "snapshot_ref": "edge://BOP-07-CAM-03/clips/evt-2026-09-16-004821.mp4",
+    "model_versions": {
+      "detection_model_version": "yolov8-v3",
+      "face_model_version": "arcface-v2",
+      "reid_model_version": "osnet-v1",
+      "scoring_config_version": "risk-config-2026-09-01"
+    }
+  },
+  {
+    "event_id": "evt-2026-09-16-004902",
+    "camera_id": "BOP-07-CAM-05",
+    "zone_id": "zone-river-crossing",
+    "global_identity_id": null,
+    "event_type": "no_traceable_origin",
+    "tier1_flags": ["no_traceable_origin", "off_hours"],
+    "tier2_observations": ["stutter_gait", "boundary_hesitation"],
+    "context_multiplier": 1.4,
+    "risk_score": 71.5,
+    "severity": "high",
+    "event_timestamp": "2026-09-16T02:45:10.000Z",
+    "snapshot_ref": "edge://BOP-07-CAM-05/clips/evt-2026-09-16-004902.mp4",
+    "model_versions": {
+      "detection_model_version": "yolov8-v3",
+      "face_model_version": "arcface-v2",
+      "reid_model_version": "osnet-v1",
+      "scoring_config_version": "risk-config-2026-09-01"
+    }
+  }
+]

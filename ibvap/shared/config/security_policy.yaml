@@ -1,0 +1,26 @@
+# Security decisions (Step 35) - agreed jointly in Phase 0.
+# All three teams build against these values; changing them after
+# Phase 0 requires cross-team agreement, not a unilateral Team 3 change.
+
+jwt:
+  algorithm: RS256
+  access_token_expire_minutes: 30
+  refresh_token_expire_days: 7
+  revocation_list_enabled: true
+
+websocket:
+  require_tls: true          # wss:// only
+  revalidate_interval_minutes: 15
+
+liveness_detection:
+  enabled: true
+  method: mediapipe_face_mesh
+
+encryption_at_rest:
+  algorithm: AES-256
+
+roles:
+  - operator
+  - admin
+  - survey_officer
+  - system

@@ -1,0 +1,16 @@
+# Data residency decisions (Step 38) - agreed jointly in Phase 0.
+# Binds all 3 teams' storage choices (PostgreSQL, FAISS, Hyperledger Fabric).
+
+deployment_region: IN
+allowed_hosting: on_premises_or_government_cloud_india_only
+third_party_foreign_cloud_allowed: false
+
+retention:
+  raw_evidence_clips_days: 90        # placeholder - confirm with SSB policy
+  event_metadata_days: 365           # placeholder - confirm with SSB policy
+  audit_log_retention: indefinite    # blockchain ledger, append-only
+
+biometric_data:
+  # Step 23/38 - DPDP Act consideration
+  consent_required: true
+  access_logged: true

@@ -1,0 +1,60 @@
+[
+  {
+    "camera_id": "BOP-07-CAM-03",
+    "local_track_id": "trk-118",
+    "frame_timestamp": "2026-09-16T05:12:33.204Z",
+    "detection_class": "person",
+    "bbox": {"x1": 210.5, "y1": 88.0, "x2": 265.0, "y2": 310.2},
+    "confidence": 0.94,
+    "reid_embedding": null,
+    "posture_signals": {
+      "crawling": false,
+      "crouching_sustained": false,
+      "sudden_level_change": false,
+      "compressed_silhouette": false,
+      "arm_tucked": false,
+      "sustained_upward_gaze": false,
+      "jittery_head": false
+    },
+    "face_match": null,
+    "anpr_result": null
+  },
+  {
+    "camera_id": "BOP-07-CAM-03",
+    "local_track_id": "trk-118",
+    "frame_timestamp": "2026-09-16T05:12:34.204Z",
+    "detection_class": "person",
+    "bbox": {"x1": 208.0, "y1": 90.5, "x2": 262.0, "y2": 312.0},
+    "confidence": 0.92,
+    "reid_embedding": [0.012, 0.884, 0.221, 0.045],
+    "posture_signals": {
+      "crawling": false,
+      "crouching_sustained": true,
+      "sudden_level_change": false,
+      "compressed_silhouette": false,
+      "arm_tucked": false,
+      "sustained_upward_gaze": false,
+      "jittery_head": false
+    },
+    "face_match": {
+      "face_bbox": {"x1": 220.0, "y1": 92.0, "x2": 240.0, "y2": 112.0},
+      "matched_person_id": "person-4471",
+      "matched_watchlist_id": null,
+      "match_confidence": 0.97,
+      "embedding_version": "arcface-v2"
+    },
+    "anpr_result": null
+  },
+  {
+    "camera_id": "BOP-07-CAM-05",
+    "local_track_id": "trk-042",
+    "frame_timestamp": "2026-09-16T05:12:35.100Z",
+    "detection_class": "car",
+    "bbox": {"x1": 400.0, "y1": 300.0, "x2": 560.0, "y2": 410.0},
+    "confidence": 0.88,
+    "reid_embedding": null,
+    "posture_signals": null,
+    "face_match": null,
+    "anpr_result": {"plate_text": "PB10AB1234", "plate_confidence": 0.81}
+  }
+]
